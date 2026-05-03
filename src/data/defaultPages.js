@@ -1,0 +1,117 @@
+// Default page configurations - stored in JSON files at runtime
+export const defaultHomePage = {
+  slug: 'home',
+  title: 'Home',
+  lang: 'en',
+  sections: [
+    {
+      id: 'hero',
+      type: 'hero',
+      enabled: true,
+      order: 0,
+      data: {
+        backgroundImage: '/space-desktop.webp',
+        title1: '',
+        title2: '',
+        subtitle: '',
+        cta: '',
+        ctaSub: '',
+        showSupport: true,
+      },
+    },
+    {
+      id: 'ticker',
+      type: 'ticker',
+      enabled: true,
+      order: 1,
+      data: {},
+    },
+    {
+      id: 'where-world',
+      type: 'whereWorld',
+      enabled: true,
+      order: 2,
+      data: {
+        title: '',
+        subtitle: '',
+      },
+    },
+    {
+      id: 'market-summary',
+      type: 'marketSummary',
+      enabled: true,
+      order: 3,
+      data: {},
+    },
+    {
+      id: 'community-ideas',
+      type: 'communityIdeas',
+      enabled: true,
+      order: 4,
+      data: {},
+    },
+    {
+      id: 'features',
+      type: 'features',
+      enabled: true,
+      order: 5,
+      data: {
+        title: '',
+        subtitle: '',
+        items: [],
+      },
+    },
+    {
+      id: 'stats',
+      type: 'stats',
+      enabled: true,
+      order: 6,
+      data: {
+        title: '',
+        items: [],
+      },
+    },
+    {
+      id: 'plans',
+      type: 'plans',
+      enabled: true,
+      order: 7,
+      data: {},
+    },
+    {
+      id: 'brokers',
+      type: 'brokers',
+      enabled: true,
+      order: 8,
+      data: {},
+    },
+    {
+      id: 'app',
+      type: 'app',
+      enabled: true,
+      order: 9,
+      data: {},
+    },
+    {
+      id: 'footer',
+      type: 'footer',
+      enabled: true,
+      order: 10,
+      data: {},
+    },
+  ],
+};
+
+export const sectionTypes = [
+  { type: 'hero', label: 'Hero Banner' },
+  { type: 'ticker', label: 'Ticker Bar' },
+  { type: 'whereWorld', label: 'Where the World' },
+  { type: 'marketSummary', label: 'Market Summary' },
+  { type: 'communityIdeas', label: 'Community Ideas' },
+  { type: 'features', label: 'Features Grid' },
+  { type: 'stats', label: 'Statistics' },
+  { type: 'plans', label: 'Pricing Plans' },
+  { type: 'brokers', label: 'Brokers' },
+  { type: 'app', label: 'Mobile App' },
+  { type: 'footer', label: 'Footer' },
+];
